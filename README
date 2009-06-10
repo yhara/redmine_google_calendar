@@ -1,6 +1,6 @@
 = Google Calendar Plugin For Redmine
 
-REQUIRES:  TZInfo GEM  (http://tzinfo.rubyforge.org/)
+Dependency:  TZInfo GEM  (http://tzinfo.rubyforge.org/)
 
 A plugin to allow users to create a new Redmine tab and embed a Google Calendar using Google Embeddable Calendar iframe.
 
