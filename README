@@ -1,18 +1,52 @@
-= Google Calendar Plugin For Redmine
+=Google Calendar Plugin For Redmine
 
 Dependency:  TZInfo GEM  (http://tzinfo.rubyforge.org/)
 
+==Description
+
 A plugin to allow users to create a new Redmine tab and embed a Google Calendar using Google Embeddable Calendar iframe.
 
-http://www.google.com/calendar/embed/EmbedHelper_en.html
+For help on how to obtain the calendar-information see http://www.google.com/calendar/embed/EmbedHelper_en.html.
+
+==Installation
 
 To install from git: 
 
 (Git Version < 1.5.3)
-$ cd {RAILS_ROOT}/vendor/plugins 
-$ git clone git://github.com/mully/redmine_google_calendar.git
+  $ cd {RAILS_ROOT}/vendor/plugins 
+  $ git clone git://github.com/mully/redmine_google_calendar.git
 
 (Git Version >= 1.5.3 -- Because the "git-rails" gem uses Git Submodules introduced in ver. 1.5.3)
-$ sudo gem install git-rails
-$ git-rails install git://github.com/mully/redmine_google_calendar.git
+  $ sudo gem install git-rails
+  $ git-rails install git://github.com/mully/redmine_google_calendar.git
 
+==Plugin setup
+
+1. Install the tzinfo gem if it does not already exist on your server:
+   $ sudo gem install tzinfo
+2. Install the plugin as described at http://www.redmine.org/wiki/redmine/Plugins (this plugin doesn't require migration).
+3. Go to "Administration -> Custom fields" and create a Project custom field of the "long text" type, named 'Google Calendar IFrame' for example.
+4. Go to "Administration -> Plugins -> Google Calendar Plugin > Configure" to configure the Google Calendar plugin:
+   * select the project custom field which contains the Google Calendar-iframe; in this example select the newly created project custom field "Google Calendar IFrame"
+
+==Enabling Calendar at project level
+
+===Retrieve the Google Calendar embedding-code (<iframe>)
+
+Go to the Google Calendar you want to embed:
+
+1. Click on "Settings" in the upper left hand corner
+2. Click on the "Calendars" tab
+3. Select the calendar you want to use
+4. In the "Embed This Calendar" section, copy the entire <iframe> code from the text box
+
+(If this is a private calendar, you will have to replace the "src" in the <iframe> with the HTML found by clicking the blue "HTML" block in the "Private Address" section on the same page.)
+
+===Add the Google Calendar embedding-code (<iframe>) in the Redmine project
+
+In your project in Redmine, go to "Project settings" :
+
+1. On the "Modules" tab: enable the module by checking "Google Calendar"
+2. On the "Information" tab: paste the <iframe> code, that you have copied to your clipboard from Google, into the 'Google Calendar IFrame' project custom field you created in step 1
+
+After that, a new item named "Calendar" should show up in the project menu. Click on this item to see your Google Calendar.
