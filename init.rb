@@ -42,12 +42,3 @@ Redmine::Plugin.register :redmine_google_calendar do
   # A new item is added to the project menu
   menu :project_menu, :google_calendar, :controller => 'google_calendar', :action => 'show'
 end
-
-## Commented-out for Redmine 0.9-devel compatibility
-## TODO Fix development-mode compatibility
-# Rails::Plugin.class_eval do
-#    def reloadable!
-#      load_paths.each { |p| Dependencies.load_once_paths.delete(p) }
-#    end
-# end
-# reloadable!
