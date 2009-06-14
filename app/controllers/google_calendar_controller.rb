@@ -20,7 +20,9 @@
 require 'tzinfo'
 
 class GoogleCalendarController < ApplicationController
+  unloadable
   layout 'base'
+  
   before_filter :find_project, :authorize
   
   def show
