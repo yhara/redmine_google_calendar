@@ -17,7 +17,7 @@
 
 require 'redmine'
 
-RAILS_DEFAULT_LOGGER.info 'Google Calendar'
+RAILS_DEFAULT_LOGGER.info 'Starting Google Calendar plugin'
 
 # Redmine Google Calendar plugin
 Redmine::Plugin.register :redmine_google_calendar do
