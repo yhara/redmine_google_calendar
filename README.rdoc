@@ -22,7 +22,8 @@ This plugin is compatible with Redmine 0.8.x as well as with the current Redmine
 
 ==Prerequisites
 
-The plugin requires the <tt>tzinfo</tt>-gem (http://tzinfo.rubyforge.org) to be available. If it does not already exist on your server, you can install it using a command like: <tt>$ sudo gem install tzinfo</tt>
+The plugin requires the <tt>tzinfo</tt>-gem (http://tzinfo.rubyforge.org) to be available. If it does not already exist on your server, you can install it using a command like:
+<tt>$ sudo gem install tzinfo</tt>
 
 ==Obtaining 
 
@@ -34,15 +35,17 @@ The plugin can be downloaded as packaged releases from:
 
 ===Source on GitHub
 
-_URL of the GitHub repository: http://github.com/MischaTheEvil/redmine_google_calendar/tree/master_
+<i>URL of the GitHub repository: http://github.com/MischaTheEvil/redmine_google_calendar/tree/master</i>
 
 The source of this plugin can be "cloned" from the GitHub-repo using two different methods:
 * using <tt>git clone</tt> (Git version < 1.5.3)
+
   <tt>
   $ cd {RAILS_ROOT}/vendor/plugins
   $ git clone git://github.com/MischaTheEvil/redmine_google_calendar.git
   </tt>
 * using <tt>git-rails</tt> (Git version >= 1.5.3 -- Because the <tt>git-rails</tt> gem uses Git Submodules which were introduced in v. 1.5.3)
+
   <tt>
   $ sudo gem install git-rails
   $ git-rails install git://github.com/MischaTheEvil/redmine_google_calendar.git
@@ -108,8 +111,8 @@ After that, a new item named "Calendar" will show up in the project menu. Click 
 
 This plugin is open-source and licensed under the "GNU General Public License v2" (GPL, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html). See the included <tt>COPYRIGHT.txt</tt> and <tt>GPL.txt</tt> files for details.
 
-* ©2009, Mischa The Evil (http://www.evil-dev.net)
-* ©2008, Jim Mulholland (http://www.squeejee.com)
+* (C)2009, Mischa The Evil (http://www.evil-dev.net)
+* (C)2008, Jim Mulholland (http://www.squeejee.com)
 
 ==Support
 
