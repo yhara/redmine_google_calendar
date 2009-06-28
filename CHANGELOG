@@ -1,3 +1,7 @@
+0.1.2 (29-06-2009):
+    * Enhancement: Add copyright-file
+    * Enhancement: Bring README.rdoc up-to-date and in-sync with the updated wiki-page on redmine.org (reflect move of the plugins' SCM-repo)
+
 0.1.1 (14-06-2009):
     * Defect: Fix compatibility with Redmine trunk while keeping it compatible with Redmine 0.8.x
     * Defect: Fix development-mode compatibility with Redmine trunk while keeping it compatible with Redmine 0.8.x in development-mode

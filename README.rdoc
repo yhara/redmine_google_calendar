@@ -10,7 +10,7 @@ For the complete changelog see the <tt>CHANGELOG</tt>-file in the Redmine Google
 
 ==Latest stable release
 
-The currently available, latest stable release of the plugin is version <b>0.1.1</b>.
+The currently available, latest stable release of the plugin is version <b>0.1.2</b>.
 
 ==Description
 

@@ -20,14 +20,14 @@
 
 require 'redmine'
 
-RAILS_DEFAULT_LOGGER.info 'Starting Google Calendar plugin 0.1.1'
+RAILS_DEFAULT_LOGGER.info 'Starting Google Calendar plugin 0.1.2'
 
 # Redmine Google Calendar plugin
 Redmine::Plugin.register :redmine_google_calendar do
   name 'Google Calendar Plugin'
   author 'Jim Mulholland'
   description 'A plugin to allow users to add a new tab with an embedded Google Calendar Iframe.'
-  version '0.1.1'
+  version '0.1.2'
   
   # This plugin contains settings
   settings :default => {
