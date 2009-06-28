@@ -42,11 +42,13 @@ The source of this plugin can be "cloned" from the GitHub-repo using two differe
 * using <tt>git clone</tt> (Git version < 1.5.3)
 <code>
 $ cd {RAILS_ROOT}/vendor/plugins
+
 $ git clone git://github.com/MischaTheEvil/redmine_google_calendar.git
 </code>
 * using <tt>git-rails</tt> (Git version >= 1.5.3 -- Because the <tt>git-rails</tt> gem uses Git Submodules which were introduced in v. 1.5.3)
 <tt>
-$ sudo gem install git-rails  
+$ sudo gem install git-rails
+
 $ git-rails install git://github.com/MischaTheEvil/redmine_google_calendar.git
 </tt>
 
