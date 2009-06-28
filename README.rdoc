@@ -23,6 +23,7 @@ This plugin is compatible with Redmine 0.8.x as well as with the current Redmine
 ==Prerequisites
 
 The plugin requires the <tt>tzinfo</tt>-gem (http://tzinfo.rubyforge.org) to be available. If it does not already exist on your server, you can install it using a command like:
+
 <tt>$ sudo gem install tzinfo</tt>
 
 ==Obtaining 
@@ -40,14 +41,16 @@ The plugin can be downloaded as packaged releases from:
 The source of this plugin can be "cloned" from the GitHub-repo using two different methods:
 * using <tt>git clone</tt> (Git version < 1.5.3)
 
-  <code>
+  <tt>
   $ cd {RAILS_ROOT}/vendor/plugins
+  
   $ git clone git://github.com/MischaTheEvil/redmine_google_calendar.git
-  </code>
+  </tt>
 * using <tt>git-rails</tt> (Git version >= 1.5.3 -- Because the <tt>git-rails</tt> gem uses Git Submodules which were introduced in v. 1.5.3)
 
   <tt>
   $ sudo gem install git-rails
+
   $ git-rails install git://github.com/MischaTheEvil/redmine_google_calendar.git
   </tt>
 
