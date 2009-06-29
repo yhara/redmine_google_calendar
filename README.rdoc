@@ -92,7 +92,7 @@ After that, a new item named "Calendar" will show up in the project menu. Click 
 ==FAQ
 
 * On the project overview tab I see the iframe code. Could that be removed?
-  * Yes, see my Redmine patch #1746 which provides an option to project custom fields to hide them from the project overview especially written for this purpose.
+  * Yes, see my Redmine patch #1746 (http://www.redmine.org/issues/1746) which provides an option to project custom fields to hide them from the project overview especially written for this purpose.
 
 ==Upgrading
 
